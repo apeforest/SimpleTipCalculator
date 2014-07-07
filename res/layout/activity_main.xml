@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${packageName}.${activityClass}" >
+
+    <EditText
+        android:id="@+id/total_amount_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="47dp"
+        android:ems="10"
+        android:hint="@string/total_amount_hint"
+        android:textAlignment="textStart" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/ten_pecent_lable"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/total_amount_label"
+        android:layout_below="@+id/total_amount_label"
+        android:layout_marginTop="82dp"
+        android:onClick="OnTenPercent"
+        android:text="@string/ten_percent" />
+
+    <Button
+        android:id="@+id/fifteen_percent_label"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/ten_pecent_lable"
+        android:layout_centerHorizontal="true"
+        android:onClick="OnFifteenPercent"
+        android:text="@string/fifteen_percent" />
+
+    <Button
+        android:id="@+id/twenty_percent_label"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/total_amount_label"
+        android:layout_alignTop="@+id/fifteen_percent_label"
+        android:onClick="OnTwentyPercent"
+        android:text="@string/twenty_percent" />
+
+    <TextView
+        android:id="@+id/tip_is_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ten_pecent_lable"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="74dp"
+        android:text="@string/tip_is"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/tip_amount_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tip_is_label"
+        android:layout_alignBottom="@+id/tip_is_label"
+        android:layout_alignLeft="@+id/fifteen_percent_label"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>
