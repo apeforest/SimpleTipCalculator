@@ -13,6 +13,7 @@
         android:layout_marginTop="47dp"
         android:ems="10"
         android:hint="@string/total_amount_hint"
+        android:maxLines="1"
         android:textAlignment="textStart" >
 
         <requestFocus />
@@ -60,12 +61,33 @@
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <TextView
+        android:id="@+id/dollar_symbol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tip_amount_label"
+        android:layout_alignBottom="@+id/tip_amount_label"
+        android:layout_toRightOf="@+id/ten_pecent_lable"
+        android:text="@string/USD_symbol"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
         android:id="@+id/tip_amount_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/tip_is_label"
         android:layout_alignBottom="@+id/tip_is_label"
-        android:layout_alignLeft="@+id/fifteen_percent_label"
+        android:layout_toRightOf="@+id/dollar_symbol"
         android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/reset"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tip_amount_label"
+        android:layout_alignBottom="@+id/tip_amount_label"
+        android:layout_alignRight="@+id/twenty_percent_label"
+        android:onClick="OnReset"
+        android:text="@string/reset" />
 
 </RelativeLayout>

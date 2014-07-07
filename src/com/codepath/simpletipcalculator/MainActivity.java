@@ -44,4 +44,7 @@ public class MainActivity extends Activity {
         tipValueText.setText(String.format("%.2f", tipValue));
     }
     
+    public void OnReset(View v) {
+    	tipValueText.setText("");
+    }
 }

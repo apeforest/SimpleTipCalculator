@@ -9,5 +9,7 @@
     <string name="tip_is">Tip is:</string>
     <string name="tip_amount">tip amount</string>
     <string name="total_amount_hint">Enter total amount</string>
+    <string name="USD_symbol">$</string>
+    <string name="reset">Reset</string>
 
 </resources>
